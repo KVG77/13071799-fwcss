@@ -218,6 +218,22 @@ nav a:hover {
     width: 0;
     display:none;
 }
+
+/* ==========================================================================
+   Animation styles
+   ========================================================================== */
+.model {
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -ms-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -0-animation-delay: 0s;
+    /*-webkit-animation-iteration-count: infinite;*/
+}
+
 /* ==========================================================================
    Custom styles
    ========================================================================== */
