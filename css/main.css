@@ -1,0 +1,553 @@
+/* ==========================================================================
+   TEMPLATE: Q1 Tactical : v0.1
+   ========================================================================== */
+
+@font-face {
+    font-style: normal;
+    font-family: 'NissanAGBold';
+    src: url('../font/nissanagbol.eot');
+    src: url('../font/nissanagbol.eot?#iefix') format('embedded-opentype'), url('../font/nissanagbol.woff') format('woff'), url('../font/nissanagbol.ttf') format('truetype'), url('../font/nissanagbol.svg#NissanAGBold') format('svg');
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+h1,h2,h3,h4,h5,h6 {font-family:  'NissanAGBold', Arial, sans-serif;font-weight: normal;}
+
+ul {
+    padding: 0;
+    margin:0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   
+   ========================================================================== */
+
+body {
+    font: 16px/26px Arial;
+    /*-moz-box-shadow: inset 0 0 40px 5px #888;
+    -webkit-box-shadow: inset 0 0 40px 5px#888;
+    box-shadow: inset 0 0 40px 5px #888;*/
+}
+
+.wrapper {
+    width: 90%;
+    margin: 25px auto;
+}
+
+/* ===================
+    GENERAL: 
+   =================== */
+
+.header-container {
+    margin-bottom: 27px;
+}
+
+.footer-container,
+.main aside {
+    margin-top: 50px;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #ececec;
+}
+
+.title {
+    color: #000000;
+    display: inline-block;
+    line-height: 0.1em;
+    text-transform: uppercase;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 0 25px 20px 0px; /*left 19*/
+    border: 5px solid #E5E5E5;
+    background-color: #FFFFFF;
+}
+
+.main article h1 {
+    font-size: 3.063em
+}
+
+.main aside {
+    color: #000;
+    padding: 10px 10px 10px;
+    margin: 25px 0 0;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+   /* .title {
+        float: left;
+    }*/
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 53.3%;
+    }
+
+    .main aside {
+        /*float: right;
+        width: 28%;*/
+        float: right;
+        height: 142px;
+        width: 331px;
+        overflow: hidden;
+    }
+/* ==========================================================================
+   Shapes styles
+   ========================================================================== */
+#triangle-right {
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #BE0136;
+    border-top: 15px solid transparent;
+    height: 0;
+    margin-left: 80%;
+    position: absolute;
+    width: 0;
+    display:none;
+}
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+/*.logo{width:93px;height:103px;background: url("../img/nissan-logo.png") no-repeat scroll 0 0 #bf0046;display: inline-block;margin-left: 19px;}*/
+.logo {
+  background: url(../img/nissan-logo.png) no-repeat 0 0 transparent; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  min-height: 103px;
+  max-width:93px;
+  margin-left: 10px;
+  display: inline-block;
+  margin-left: 19px;
+}
+.title {margin-left: 19px;}
+.title span {font-family: 'NissanAGBold',Arial,sans-serif;}
+.color-red {color:#be0136}
+.main aside h3 {text-transform: uppercase;margin: 0px 0px 0px;}
+.main aside h6 {text-transform: uppercase;margin: 25px 0 0; color:#444444; font-size: 10px; line-height: 15px}
+/*.model {background: url("../img/juke-main.jpg") no-repeat scroll 0 0 transparent; width:432px; max-width:432px;height:293px;margin-top: 24.5%;}*/
+.model { 
+  background: url(../img/juke-main.jpg) no-repeat 0 0 transparent; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  margin-top: 22%;
+  min-height: 293px;
+}
+aside p {font-weight: bold;font-size:0.688em;line-height: 1.2em;margin: 0 0 10px;;}
+.first-aside {width: 329px !important;height: 140px !important;border:1px solid #ccc;background-color: #e5e5e5 !important;}
+.offers{height:153px !important;}
+.main.wrapper footer {display: inline-block;padding: 0 0 0 19px;margin-top: 10px; }
+.main.wrapper footer p {font-size: 0.563em;line-height: 1.1em;}
+.land-button, .land-button320, .land-buttongeo {background: none repeat scroll 0 0 #BE0136;border: medium none;vertical-align: middle;color: white;display: inline-block;text-decoration: none;text-transform: uppercase;font-size: 0.625em;font-weight: bold;height: 20px;line-height: 1.9em;padding: 0 0.6em;}
+.white-box {background-color: #FFFFFF;display: inline-block;height: 46px;padding: 5px;width: 90px;margin-bottom: 17px}
+aside input {font-size: 0.7em;vertical-align: middle;width: 125px;}
+aside input[type="submit"] {padding-top: 1px;}
+.bottom-line {border-bottom: 1px solid #CCCCCC;}
+#more li {display: block;font-size: 12px;font-weight: bold;width: 139px;}
+#more {width:140px;}.bottom-more{position:relative; bottom:20px;}
+.white-box > p {margin: 0;position: relative;top: 10px;}
+.price {font-size: 21px;font-weight: bold;margin-top: -5px;padding: 0 0 0 44px;position: absolute;}
+.pcm {font-size: 11px;font-weight: bold;margin-top: 8px;padding: 0 0 0 67px; position: absolute;}
+.p2{display:none;}
+.land-buttongeo {background: url("../img/geo-button.png") no-repeat scroll 3px 3px #BE0136;width: 10px;}
+.width320 {width: auto}
+}
+
+/* ====================
+    RETINA: images
+   ==================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .model {
+        background-image: url(images/image@2x.png);
+        background-size: 164px 148px;
+    }
+}  
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (max-width: 900px) {
+/*.main {background-color: #FFFFFF;border: 0px solid #E5E5E5;padding: 0 0 20px 0 !important;}*/
+.main article {width: 100%;}
+.model { 
+  background: url(../img/juke-main.jpg) no-repeat 0 0 transparent; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  margin-top: 5%;
+  min-height: 293px;
+}
+/*.model {background: url("../img/juke-main.jpg") no-repeat scroll 0 0 / contain transparent;width: 100%;margin-top: 5%;}*/
+.main aside {
+    color: #000000;
+    margin: 22px 0 0;
+    padding: 2.5%;
+}
+.main aside, main .first-aside {
+    width: 95% !important;
+}
+.main {
+    background-color: #FFFFFF;
+    border: 5px solid #E5E5E5;
+    padding: 0 0 20px;
+}
+
+} 
+
+@media only screen and (max-width: 480px) {
+.main {background-color: #FFFFFF;border: none;padding: 0 0 20px 0 !important;-moz-box-shadow: inset 0 0 5px 6px #ECECEC;
+    -webkit-box-shadow: inset 0 0 5px 6px #ECECEC;
+    box-shadow: inset 0 0 5px 6px #ECECEC;}
+/*.model{height: 187px;margin-top: 7.5%;background: url("../img/juke-main.jpg") no-repeat scroll 12px 0 / contain transparent;}*/
+.model { 
+  background: url(../img/juke-main.jpg) no-repeat 0 0 transparent; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  margin-top: 5%;
+  min-height: 187px;
+}
+.wrapper {margin: 0 auto;width: 100%;}
+.title {margin-left: 5px;}
+/*.logo {background: url("../img/nissan-logo.png") no-repeat scroll 0 0 / contain #BF0046;height: 76px;margin-left: 10px;width: 22%;}*/
+.logo {
+  background: url(../img/nissan-logo.png) no-repeat 0 0 transparent; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 22%;
+  min-height: 76px;
+  margin-left: 10px;
+}
+.title h1 {font-size: 1.9em !important;}
+.title span {font-size: 0.7em;}
+.first-aside.offers ul {display: none; }
+.main aside, main .first-aside { width: 93% !important; height:auto;}
+.land-button {background: none repeat scroll 0 0 transparent;border: medium none;color: #BE0136;display: inline-block;font-size: 0.825em;font-weight: normal;height: 20px;line-height: 0.9em;padding: 0;text-decoration: none;text-transform: none;vertical-align: middle;}
+.fr {float:none !important}
+#more {margin-bottom: 20px;}
+aside p {width: 74%;}
+.first-aside, .offers {height:auto !important;margin-top: 0 !important; border:none;}
+.p1 {display:none;}
+.p2 {display:block;}
+.main aside h6 {margin: 10px 0 0;text-transform: none;}
+form {width: 150px;}
+.width320 {width:100px;}
+#triangle-right {display:block;}
+.main.wrapper footer {width: 88%;}
+.gap {margin-left: 0 !important;}
+.width320 {width: 104px !important;}
+.main aside h6 {display:none;}
+
+} 
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 810px; /* 820px - 10px for margins */
+        margin: 25px auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.gap {margin-left: 0.313em}
+.gap-wb {margin-left: 0.625em}
+.fr {float: right;}
+.fl {float:left;}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+}
